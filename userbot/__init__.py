@@ -346,7 +346,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```🔥 Man-Userbot Berhasil Di Aktifkan 🔥```")
+    await bot.send_message(BOTLOG_CHATID, "```Userbot Aktif```")
     return
 
 with bot:
@@ -423,18 +423,18 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__ 🔥 **Man-Userbot** 🔥\n\n"
+                f"**Hey**, __I am using__ 🔥 RIN Userbot 🔥\n\n"
                 f"       __Thanks For Using me__\n\n"
                 f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
-                f"✣ **Group Support :** [Sharing Userbot](t.me/sharinguserbot)\n"
-                f"✣ **Owner Repo :** [Risman](t.me/mrismanaziz)\n"
-                f"✣ **Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n")
+                f"✣ **Group Support :** [Sharing Userbot](t.me/PARADISE_SID)\n"
+                f"✣ **Owner Repo :** [Risman](t.me/xrinhere)\n"
+                f"✣ **Repo :** [Man-Userbot](https://github.com/iamfth/ubots)\n")
             await tgbot.send_file(event.chat_id, logo, caption=text,
                                   buttons=[
                                       [
                                           custom.Button.url(
                                               text="⛑ Group Support ⛑",
-                                              url="https://t.me/SharingUserbot"
+                                              url="https://t.me/PARADISE_SID"
                                           )
                                       ]
                                   ]
@@ -450,7 +450,7 @@ with bot:
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
                     text="{}\n\n**✥ Jumlah Module Yang Tersedia :** `{}` **Module**\n               \n**✥ Daftar Modul Man-Userbot :** \n".format(
-                        "**✗ Man-Userbot Main Menu ✗**",
+                        "**✗ RIN Userbot Main Menu ✗**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -459,33 +459,33 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Man - Userbot",
-                    url="https://t.me/SharingUserbot",
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/mrismanaziz)\n✣ **Grup Support :** @SharingUserbot\n✣ **Repository :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    description="Repository RIN Userbot",
+                    url="https://t.me/xrinhere",
+                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/xrinhere)\n",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/SharingUserbot"),
+                                "https://t.me/PARADISE_SID"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/mrismanaziz/Man-Userbot")],
+                                "https://github.com/iamfth/ubot")],
                     ],
                     link_preview=False)
             else:
                 result = builder.article(
                     title="✗ Man-Userbot ✗",
                     description="Man - UserBot | Telethon",
-                    url="https://t.me/SharingUserbot",
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/mrismanaziz)\n✣ **Grup Support :** @SharingUserbot\n✣ **Repository :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    url="https://t.me/PARADISE_SID",
+                    text="**RIN - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Deploy By :** [RIN](https://t.me/xrinhere)\n",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/SharingUserbot"),
+                                "https://t.me/PARADISE_SID"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/mrismanaziz/Man-Userbot")],
+                                "https://github.com/iamfth/ubot")],
                     ],
                     link_preview=False,
                 )
