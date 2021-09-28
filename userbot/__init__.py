@@ -107,9 +107,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/mrismanaziz/Man-Userbot.git")
+    "https://github.com/iamfth/ubots.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Man-Userbot")
+    "UPSTREAM_REPO_BRANCH", "RIN")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -426,9 +426,9 @@ with bot:
                 f"**Hey**, __I am using__ 🔥 RIN Userbot 🔥\n\n"
                 f"       __Thanks For Using me__\n\n"
                 f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
-                f"✣ **Group Support :** [Sharing Userbot](t.me/PARADISE_SID)\n"
-                f"✣ **Owner Repo :** [Risman](t.me/xrinhere)\n"
-                f"✣ **Repo :** [Man-Userbot](https://github.com/iamfth/ubots)\n")
+                f"✣ **Group Support :** [Mutual Group Chat](t.me/PARADISE_SID)\n"
+                f"✣ **Owner Repo :** [RIN](t.me/xrinhere)\n"
+                f"✣ **Repo :** [RIN-Userbot](https://github.com/iamfth/ubots)\n")
             await tgbot.send_file(event.chat_id, logo, caption=text,
                                   buttons=[
                                       [
@@ -449,7 +449,7 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**✥ Jumlah Module Yang Tersedia :** `{}` **Module**\n               \n**✥ Daftar Modul Man-Userbot :** \n".format(
+                    text="{}\n\n**✥ Jumlah Module Yang Tersedia :** `{}` **Module**\n               \n**✥ Daftar Modul RIN Bot :** \n".format(
                         "**✗ RIN Userbot Main Menu ✗**",
                         len(dugmeler),
                     ),
